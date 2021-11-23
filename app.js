@@ -8,7 +8,7 @@ var Students = require('./models/students');
 var Teachers = require('./models/teachers');
 var Subjects = require('./models/subjects');
 
-mongoose.connect('mongodb://localhost/school', {
+mongoose.connect('mongodb+srv://ayush:WARmachine68@cluster0.yvdyu.mongodb.net/School?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('Connected to mongodb successful')).catch((err) => console.error(err));
